@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Posts - Lost & Found</title>
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+
+  <script src="js/firebaseConfig.js"></script>
+</head>
+<body>
+  <header>
+    <h1>My Posts</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="post.html">Post Item</a>
+      <a id="myPostsLink" href="myposts.html" style="display:none;">My Posts</a>
+    </nav>
+  </header>
+
+  <div class="auth-buttons">
+    <button id="loginBtn">Login with Google</button>
+    <button id="logoutBtn" style="display:none;">Logout</button>
+  </div>
+
+  <main>
+    <section id="myPosts" class="cards"></section>
+  </main>
+
+  <script src="js/auth.js"></script>
+  <script src="js/myposts.js"></script>
+</body>
+</html>

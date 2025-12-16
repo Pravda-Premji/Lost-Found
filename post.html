@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Post Item - Lost & Found</title>
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+
+  <script src="js/firebaseConfig.js"></script>
+</head>
+
+<body>
+
+  <header><h1>Post Lost or Found Item</h1></header>
+
+  <!-- Login Buttons -->
+  <div class="auth-buttons">
+    <button id="loginBtn">Login with Google</button>
+    <button id="logoutBtn" style="display:none;">Logout</button>
+  </div>
+
+  <main>
+    <form id="postForm">
+
+      <label>Title
+        <input name="title" required>
+      </label>
+
+      <label>Description
+        <textarea name="description"></textarea>
+      </label>
+
+      <label>Type
+        <select name="type">
+          <option value="lost">Lost</option>
+          <option value="found">Found</option>
+        </select>
+      </label>
+
+      <label>Location
+        <input name="location" required>
+      </label>
+
+      <label>Contact
+        <input name="contact" required>
+      </label>
+
+      <label>Image
+        <input type="file" name="image" accept="image/*">
+      </label>
+
+      <button type="submit">Post</button>
+    </form>
+  </main>
+
+  <script src="js/auth.js"></script>
+  <script src="js/post.js"></script>
+
+</body>
+</html>
