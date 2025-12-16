@@ -82,4 +82,23 @@ This prevents incorrect matches based only on location.
 ---
 
 ## 📁 Project Structure
+lostfound/
+│
+├── index.html # Home page (list items)
+├── post.html # Post lost/found item
+├── myposts.html # User’s own posts
+├── css/
+│ └── styles.css
+├── js/
+│ ├── firebaseConfig.js
+│ ├── auth.js
+│ ├── main.js
+│ ├── post.js
+│ └── myposts.js
+└── README.md
+🎯 Future Improvements
 
+#Admin moderation panel
+#Email notifications for matches
+#Advanced AI-based image matching
+#Chat between finder and owner
